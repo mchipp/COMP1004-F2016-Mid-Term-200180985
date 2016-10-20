@@ -112,5 +112,50 @@ namespace COMP1004_F2016_Mid_Term_200180985
             // Step 5 - Show the next form
             raceAndClassForm.Show();
         }
+
+        private void ModifyButton_Click(object sender, EventArgs e)
+        {
+            // set the selected ability to the combobox text value
+            String selectedAbility = ModifyAbilityComboBox.Text;
+
+            // this switch will add one point to the selected ability
+            switch (selectedAbility)
+            {
+                case "Strength":
+                    StrengthTextBox.Text = (Convert.ToInt32(StrengthTextBox.Text) + 1).ToString();
+                    break;
+                case "Dexterity":
+                    DexterityTextBox.Text = (Convert.ToInt32(DexterityTextBox.Text) + 1).ToString();
+                    break;
+                case "Constitution":
+                    ConstitutionTextBox.Text = (Convert.ToInt32(ConstitutionTextBox.Text) + 1).ToString();
+                    break;
+                case "Intelligence":
+                    IntelligenceTextBox.Text = (Convert.ToInt32(IntelligenceTextBox.Text) + 1).ToString();
+                    break;
+                case "Wisdom":
+                    WisdomTextBox.Text = (Convert.ToInt32(WisdomTextBox.Text) + 1).ToString();
+                    break;
+                case "Charisma":
+                    CharismaTextBox.Text = (Convert.ToInt32(CharismaTextBox.Text) + 1).ToString();
+                    break;
+                default:
+                    Console.WriteLine("Nothing was selected");
+                    break;
+            }
+
+            // disable the modify button! No godmoding here!
+            ModifyButton.Enabled = false;
+        }
+
+        private void SwapButton_Click(object sender, EventArgs e)
+        {
+            String firstAbility = FirstAbilityComboBox.Text;
+            String secondAbility = SecondAbilityComboBox.Text;
+
+            
+
+            
+        }
     }
 }
