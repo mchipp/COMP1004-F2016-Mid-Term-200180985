@@ -35,7 +35,9 @@
             this.ElfRadioButton = new System.Windows.Forms.RadioButton();
             this.HumanRadioButton = new System.Windows.Forms.RadioButton();
             this.NextButton = new System.Windows.Forms.Button();
+            this.RacePictureBox = new System.Windows.Forms.PictureBox();
             this.RaceGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RacePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // BackButton
@@ -120,6 +122,16 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
+            // RacePictureBox
+            // 
+            this.RacePictureBox.BackgroundImage = global::COMP1004_F2016_Mid_Term_200180985.Properties.Resources.Human_Male;
+            this.RacePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RacePictureBox.Location = new System.Drawing.Point(197, 32);
+            this.RacePictureBox.Name = "RacePictureBox";
+            this.RacePictureBox.Size = new System.Drawing.Size(253, 285);
+            this.RacePictureBox.TabIndex = 7;
+            this.RacePictureBox.TabStop = false;
+            // 
             // RaceAndClassForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,6 +139,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(504, 439);
             this.ControlBox = false;
+            this.Controls.Add(this.RacePictureBox);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.RaceGroupBox);
             this.Controls.Add(this.BackButton);
@@ -137,6 +150,7 @@
             this.Load += new System.EventHandler(this.RaceAndClassForm_Load);
             this.RaceGroupBox.ResumeLayout(false);
             this.RaceGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RacePictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -150,5 +164,6 @@
         private System.Windows.Forms.RadioButton ElfRadioButton;
         private System.Windows.Forms.RadioButton HumanRadioButton;
         protected System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.PictureBox RacePictureBox;
     }
 }

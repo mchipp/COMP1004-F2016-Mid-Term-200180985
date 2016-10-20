@@ -47,6 +47,24 @@ namespace COMP1004_F2016_Mid_Term_200180985
             this._selectedRace = selectedRace.Text;
 
             Program.character.Race = this._selectedRace;
+
+            // set the race image based on selected race
+            if(_selectedRace == "Human")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Human_Male;
+            }
+            else if(_selectedRace == "Elf")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Elf_Male;
+            }
+            else if (_selectedRace == "Dwarf")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Dwarf_Male;
+            }
+            else if (_selectedRace == "Halfling")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Halfling_Male;
+            }
         }
 
         private void NextButton_Click(object sender, EventArgs e)

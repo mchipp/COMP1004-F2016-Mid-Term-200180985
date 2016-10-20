@@ -59,6 +59,25 @@ namespace COMP1004_F2016_Mid_Term_200180985
             FirstNameTextBox.Text = Program.character.FirstName.ToString();
             LastNameTextBox.Text = Program.character.LastName.ToString();
             RaceTextBox.Text = Program.character.Race.ToString();
+
+            // convoluted if statement to set image based on race variable
+            // must be a better way, but this makes it happen for now
+            if (RaceTextBox.Text == "Human")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Human_Male;
+            }
+            else if (RaceTextBox.Text == "Elf")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Elf_Male;
+            }
+            else if (RaceTextBox.Text == "Dwarf")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Dwarf_Male;
+            }
+            else if (RaceTextBox.Text == "Halfling")
+            {
+                RacePictureBox.BackgroundImage = Properties.Resources.Halfling_Male;
+            }
         }
     }
 }
