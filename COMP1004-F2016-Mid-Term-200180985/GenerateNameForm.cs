@@ -28,7 +28,28 @@ namespace COMP1004_F2016_Mid_Term_200180985
         // EVENT HANDLERS
         private void GenerateButton_Click(object sender, EventArgs e)
         {
+            // calls generate names function
             GenerateNames();
+        }
+
+
+
+        private void GenerateNameForm_Load(object sender, EventArgs e)
+        {
+            // calls generate names function
+            GenerateNames();
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            // instantiate a new abilityGeneratorForm
+            AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
+
+            // show the new form
+            abilityGeneratorForm.Show();
+
+            // hide this form
+            this.Hide();
         }
 
         // FUNCTIONS
@@ -45,18 +66,6 @@ namespace COMP1004_F2016_Mid_Term_200180985
 
             Program.character.FirstName = FirstNameTextBox.Text;
             Program.character.LastName = LastNameTextBox.Text;
-        }
-
-        private void GenerateNameForm_Load(object sender, EventArgs e)
-        {
-            GenerateNames();
-        }
-
-        private void NextButton_Click(object sender, EventArgs e)
-        {
-            AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
-            abilityGeneratorForm.Show();
-            this.Hide();
         }
     }
 }

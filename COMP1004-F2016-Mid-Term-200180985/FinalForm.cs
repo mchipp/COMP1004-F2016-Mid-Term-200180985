@@ -48,6 +48,7 @@ namespace COMP1004_F2016_Mid_Term_200180985
 
         private void FinalForm_Load(object sender, EventArgs e)
         {
+            // set the text fields on this form to match the contents of the character class
             StrengthTextBox.Text = Program.character.Strength.ToString();
             DexterityTextBox.Text = Program.character.Dexterity.ToString();
             ConstitutionTextBox.Text = Program.character.Constitution.ToString();

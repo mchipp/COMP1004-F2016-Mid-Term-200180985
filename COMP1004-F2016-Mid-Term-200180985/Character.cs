@@ -21,8 +21,11 @@ namespace COMP1004_F2016_Mid_Term_200180985
 
         public string Race { get; set; }
 
+
+        // added to hold FirstName information for character
         public string FirstName { get; set; }
 
+        // added to hold LastName information for character
         public string LastName { get; set; }
     }
 }

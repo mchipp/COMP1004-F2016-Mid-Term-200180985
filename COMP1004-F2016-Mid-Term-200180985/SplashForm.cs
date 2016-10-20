@@ -24,15 +24,17 @@ namespace COMP1004_F2016_Mid_Term_200180985
 
         private void SplashScreenTimer_tick(object sender, EventArgs e)
         {
+            // disable the timer (stop it!)
             SplashScreenTimer.Enabled = false;
+
+            // instantiate a new GenerateNameForm
             GenerateNameForm generateNameform = new GenerateNameForm();
+
+            // show the newly instantiated form
             generateNameform.Show();
+
+            // hide this form
             this.Hide();
-        }
-
-        private void SplashForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
