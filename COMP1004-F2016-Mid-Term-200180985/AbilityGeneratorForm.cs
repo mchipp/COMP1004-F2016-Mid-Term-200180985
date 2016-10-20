@@ -1,4 +1,9 @@
-﻿using System;
+﻿/// Author: Tom Tsiliopolis, Mark Chipp
+/// Date: 20-Oct-2016
+/// File: FinalForm.cs
+/// Purpose: This form generates the character's abilities
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

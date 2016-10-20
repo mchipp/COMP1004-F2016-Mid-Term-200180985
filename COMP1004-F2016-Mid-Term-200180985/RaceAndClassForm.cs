@@ -1,4 +1,9 @@
-﻿using System;
+﻿/// Author: Tom Tsiliopolis, Mark Chipp
+/// Date: 20-Oct-2016
+/// File: RaceAndClassForm.cs
+/// Purpose: This form lets the user selecte race and class attributes
+ 
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,15 +45,24 @@ namespace COMP1004_F2016_Mid_Term_200180985
             RadioButton selectedRace = (RadioButton)sender;
 
             this._selectedRace = selectedRace.Text;
+
+            Program.character.Race = this._selectedRace;
         }
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Program.character.Race = this._selectedRace;
+
             FinalForm finalForm = new FinalForm();
             finalForm.previousForm = this;
 
             finalForm.Show();
             this.Hide();
+        }
+
+        private void RaceAndClassForm_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
