@@ -147,15 +147,5 @@ namespace COMP1004_F2016_Mid_Term_200180985
             // disable the modify button! No godmoding here!
             ModifyButton.Enabled = false;
         }
-
-        private void SwapButton_Click(object sender, EventArgs e)
-        {
-            String firstAbility = FirstAbilityComboBox.Text;
-            String secondAbility = SecondAbilityComboBox.Text;
-
-            
-
-            
-        }
     }
 }

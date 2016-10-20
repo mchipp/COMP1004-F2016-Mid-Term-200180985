@@ -48,15 +48,8 @@
             this.SwapAbilitiesLabel = new System.Windows.Forms.Label();
             this.ModifyButton = new System.Windows.Forms.Button();
             this.AbilityLabel = new System.Windows.Forms.Label();
-            this.SwapAbilitiesGroupBox = new System.Windows.Forms.GroupBox();
-            this.SecondAbilityComboBox = new System.Windows.Forms.ComboBox();
-            this.FirstAbilityLabel = new System.Windows.Forms.Label();
-            this.SecondAbilityLabel = new System.Windows.Forms.Label();
-            this.FirstAbilityComboBox = new System.Windows.Forms.ComboBox();
-            this.SwapButton = new System.Windows.Forms.Button();
             this.AbilityGroupBox.SuspendLayout();
             this.ModifyAbilitiyGroupBox.SuspendLayout();
-            this.SwapAbilitiesGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // AbilityGroupBox
@@ -282,89 +275,12 @@
             this.AbilityLabel.TabIndex = 3;
             this.AbilityLabel.Text = "Ability";
             // 
-            // SwapAbilitiesGroupBox
-            // 
-            this.SwapAbilitiesGroupBox.Controls.Add(this.SwapButton);
-            this.SwapAbilitiesGroupBox.Controls.Add(this.FirstAbilityComboBox);
-            this.SwapAbilitiesGroupBox.Controls.Add(this.SecondAbilityLabel);
-            this.SwapAbilitiesGroupBox.Controls.Add(this.FirstAbilityLabel);
-            this.SwapAbilitiesGroupBox.Controls.Add(this.SecondAbilityComboBox);
-            this.SwapAbilitiesGroupBox.Location = new System.Drawing.Point(226, 73);
-            this.SwapAbilitiesGroupBox.Name = "SwapAbilitiesGroupBox";
-            this.SwapAbilitiesGroupBox.Size = new System.Drawing.Size(215, 100);
-            this.SwapAbilitiesGroupBox.TabIndex = 5;
-            this.SwapAbilitiesGroupBox.TabStop = false;
-            this.SwapAbilitiesGroupBox.Text = "Swap Abilities";
-            // 
-            // SecondAbilityComboBox
-            // 
-            this.SecondAbilityComboBox.FormattingEnabled = true;
-            this.SecondAbilityComboBox.Items.AddRange(new object[] {
-            "Strength",
-            "Dexterity",
-            "Constitution",
-            "Intelligence",
-            "Wisdom",
-            "Charisma"});
-            this.SecondAbilityComboBox.Location = new System.Drawing.Point(120, 35);
-            this.SecondAbilityComboBox.Name = "SecondAbilityComboBox";
-            this.SecondAbilityComboBox.Size = new System.Drawing.Size(85, 21);
-            this.SecondAbilityComboBox.TabIndex = 1;
-            this.SecondAbilityComboBox.Text = "Dexterity";
-            // 
-            // FirstAbilityLabel
-            // 
-            this.FirstAbilityLabel.AutoSize = true;
-            this.FirstAbilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstAbilityLabel.Location = new System.Drawing.Point(7, 20);
-            this.FirstAbilityLabel.Name = "FirstAbilityLabel";
-            this.FirstAbilityLabel.Size = new System.Drawing.Size(69, 13);
-            this.FirstAbilityLabel.TabIndex = 2;
-            this.FirstAbilityLabel.Text = "First Ability";
-            // 
-            // SecondAbilityLabel
-            // 
-            this.SecondAbilityLabel.AutoSize = true;
-            this.SecondAbilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SecondAbilityLabel.Location = new System.Drawing.Point(117, 20);
-            this.SecondAbilityLabel.Name = "SecondAbilityLabel";
-            this.SecondAbilityLabel.Size = new System.Drawing.Size(88, 13);
-            this.SecondAbilityLabel.TabIndex = 3;
-            this.SecondAbilityLabel.Text = "Second Ability";
-            // 
-            // FirstAbilityComboBox
-            // 
-            this.FirstAbilityComboBox.FormattingEnabled = true;
-            this.FirstAbilityComboBox.Items.AddRange(new object[] {
-            "Strength",
-            "Dexterity",
-            "Constitution",
-            "Intelligence",
-            "Wisdom",
-            "Charisma"});
-            this.FirstAbilityComboBox.Location = new System.Drawing.Point(10, 35);
-            this.FirstAbilityComboBox.Name = "FirstAbilityComboBox";
-            this.FirstAbilityComboBox.Size = new System.Drawing.Size(85, 21);
-            this.FirstAbilityComboBox.TabIndex = 4;
-            this.FirstAbilityComboBox.Text = "Strength";
-            // 
-            // SwapButton
-            // 
-            this.SwapButton.Location = new System.Drawing.Point(120, 65);
-            this.SwapButton.Name = "SwapButton";
-            this.SwapButton.Size = new System.Drawing.Size(85, 23);
-            this.SwapButton.TabIndex = 5;
-            this.SwapButton.Text = "Swap";
-            this.SwapButton.UseVisualStyleBackColor = true;
-            this.SwapButton.Click += new System.EventHandler(this.SwapButton_Click);
-            // 
             // AbilityGeneratorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(504, 481);
-            this.Controls.Add(this.SwapAbilitiesGroupBox);
             this.Controls.Add(this.ModifyAbilitiyGroupBox);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.AbilityGroupBox);
@@ -377,8 +293,6 @@
             this.AbilityGroupBox.PerformLayout();
             this.ModifyAbilitiyGroupBox.ResumeLayout(false);
             this.ModifyAbilitiyGroupBox.PerformLayout();
-            this.SwapAbilitiesGroupBox.ResumeLayout(false);
-            this.SwapAbilitiesGroupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -405,12 +319,6 @@
         private System.Windows.Forms.Label SwapAbilitiesLabel;
         private System.Windows.Forms.Label AbilityLabel;
         private System.Windows.Forms.Button ModifyButton;
-        private System.Windows.Forms.GroupBox SwapAbilitiesGroupBox;
-        private System.Windows.Forms.ComboBox FirstAbilityComboBox;
-        private System.Windows.Forms.Label SecondAbilityLabel;
-        private System.Windows.Forms.Label FirstAbilityLabel;
-        private System.Windows.Forms.ComboBox SecondAbilityComboBox;
-        private System.Windows.Forms.Button SwapButton;
     }
 }
 

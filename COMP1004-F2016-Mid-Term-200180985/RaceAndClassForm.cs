@@ -80,7 +80,7 @@ namespace COMP1004_F2016_Mid_Term_200180985
 
         private void RaceAndClassForm_Load(object sender, EventArgs e)
         {
-            
+            this._selectedRace = "Human";
         }
     }
 }
